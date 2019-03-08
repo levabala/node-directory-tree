@@ -1,22 +1,22 @@
 {
-  "name": "directory-tree",
+  "name": "levabala_directory-tree",
   "version": "2.2.1",
   "description": "Convert a directory tree to a JS object.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mihneadb/node-directory-tree"
+    "url": "https://github.com/levabala/node-directory-tree"
   },
   "keywords": [
     "directory",
     "tree"
   ],
   "main": "lib/directory-tree.js",
-  "author": "Mihnea Dobrescu-Balaur",
+  "author": "Mihnea Dobrescu-Balaur (forked by levabala)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mihneadb/node-directory-tree/issues"
+    "url": "https://github.com/levabala/node-directory-tree/issues"
   },
-  "homepage": "https://github.com/mihneadb/node-directory-tree",
+  "homepage": "https://github.com/levabala/node-directory-tree",
   "dependencies": {},
   "devDependencies": {
     "chai": "^2.3.0",
