@@ -9,7 +9,7 @@ declare const directoryTree: (
   onEachFile?: (item: DirectoryTree, path: string, stats: Stats) => void,
   onEachDirectory?: (item: DirectoryTree, path: string, stats: Stats) => void,
   depth?: number
-) => DirectoryTree;
+) => Promise<DirectoryTree>;
 
 declare class DirectoryTree {
   path: string;
