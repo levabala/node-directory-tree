@@ -8,6 +8,7 @@ declare const directoryTree: (
   },
   onEachFile?: (item: DirectoryTree, path: string, stats: Stats) => void,
   onEachDirectory?: (item: DirectoryTree, path: string, stats: Stats) => void,
+  depth?: number
 ) => DirectoryTree;
 
 declare class DirectoryTree {
@@ -22,7 +23,7 @@ declare class DirectoryTree {
 /*
  * Node.js fs.Stats from
  * https://github.com/DefinitelyTyped/DefinitelyTyped/blob/fbe90f14d5f6b6d65c4aa78284f212c736078d19/types/node/index.d.ts#L3696
-*/
+ */
 declare class Stats {
   isFile(): boolean;
   isDirectory(): boolean;
