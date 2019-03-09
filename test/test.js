@@ -3,6 +3,7 @@
 const expect = require("chai").expect;
 const dirtree = require("../lib/directory-tree");
 const testTree = require("./fixture.js");
+const testTreeDepth1 = require("./fixtureDepth1.js");
 const excludeTree = require("./fixtureExclude.js");
 const excludeTree2 = require("./fixtureMultipleExclude.js");
 
@@ -109,5 +110,16 @@ describe("directoryTree", () => {
         expect(child).to.have.property("ctime");
       }
     });
+  });
+
+  it("defined depth -> correct result", async () => {
+    const tree = await dirtree(
+      "./test/test_data",
+      { normalizePath: true },
+      null,
+      null,
+      1
+    );
+    expect(tree).to.deep.equal(testTreeDepth1);
   });
 });
