@@ -1,4 +1,4 @@
-declare const directoryTree: (
+export declare const directoryTree: (
   path: string,
   options?: {
     normalizePath?: boolean;
@@ -11,7 +11,7 @@ declare const directoryTree: (
   depth?: number
 ) => Promise<DirectoryTree>;
 
-declare class DirectoryTree {
+export declare class DirectoryTree {
   path: string;
   name: string;
   size: number;
@@ -24,7 +24,7 @@ declare class DirectoryTree {
  * Node.js fs.Stats from
  * https://github.com/DefinitelyTyped/DefinitelyTyped/blob/fbe90f14d5f6b6d65c4aa78284f212c736078d19/types/node/index.d.ts#L3696
  */
-declare class Stats {
+export declare class Stats {
   isFile(): boolean;
   isDirectory(): boolean;
   isBlockDevice(): boolean;
@@ -52,4 +52,4 @@ declare class Stats {
   birthtime: Date;
 }
 
-export = directoryTree;
+export default directoryTree;
